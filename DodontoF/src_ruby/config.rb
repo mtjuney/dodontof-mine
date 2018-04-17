@@ -16,14 +16,14 @@ $logFileMaxCount = 1
 
 #サーバで許容できると思うログイン人数を指定。大体でいいです。
 #この人数以上になると、人数が多いと警告が表示されるようになります。
-$aboutMaxLoginCount = 30
+$aboutMaxLoginCount = 10
 
 #サーバにログインする事のできる限界人数。
 #この人数以上になると、ログインが全くできなくなります。
 #制限しないなら -1 と指定ください。
 # 例) $limitLoginCount = 100
 #     $limitLoginCount = -1
-$limitLoginCount = 100
+$limitLoginCount = 30
 
 
 #サーバがデータの更新をサーバ内で定期チェックして待つ最大待機時間（秒）
@@ -55,16 +55,16 @@ $IS_SAVE_LONG_CHAT_LOG = true
 $chatMessageDataLogAllLineMax = 500
 
 #アップロード可能な画像ファイルのファイルサイズ上限(MB)
-$UPLOAD_IMAGE_MAX_SIZE = 10.0
+$UPLOAD_IMAGE_MAX_SIZE = 50.0
 
 #保持する画像の上限数(上限を超えた場合古いものから削除)
 $UPLOAD_IMAGE_MAX_COUNT = 2000
 
 #アップロード可能なリプレイデータのファイルサイズ上限(MB)
-$UPLOAD_REPALY_DATA_MAX_SIZE = 5.0
+$UPLOAD_REPALY_DATA_MAX_SIZE = 10.0
 
 #アップロード可能な一時アップロードのファイルサイズ上限(MB)
-$UPLOAD_FILE_MAX_SIZE = 10.0
+$UPLOAD_FILE_MAX_SIZE = 20.0
 
 #プレイルームデータ(saveData)の相対パス。
 $SAVE_DATA_DIR = "../.."
@@ -182,7 +182,7 @@ $loginCountFile = 'loginCount.txt'
 
 #読み上げ機能の有効／無効(true/false)。サーバに負荷が掛かるので有効化は慎重に
 #あ、あとPHP環境必須なんでその辺は頑張って下さい。
-$canTalk = true
+$canTalk = false
 
 #差分記録方式で保存する保存件数
 $recordMaxCount = 5
@@ -227,7 +227,7 @@ $createPlayRoomPassword = ""
 #を実行し、下記の設定を
 # $isMessagePackInstalled = true
 #に変更してください。処理が早くなります。
-$isMessagePackInstalled = false
+$isMessagePackInstalled = true
 
 #デフォルトで表示されるユーザー名
 #配列なので、 ["abc", "def"] のように複数記述すると、どれかがランダムで表示されます。

@@ -1,9 +1,13 @@
 yum update -y && yum -y upgrade
 
 yum install -y httpd
+yum -y groups install "Development Tools"
 yum install -y ruby rubygems
+
 ln -s /usr/bin/ruby /usr/local/bin/ruby
+
 gem update --system
+gem install msgpack
 
 cp -r imageUploadSpace /var/www/html/
 cp -r saveData /var/www/
