@@ -42,7 +42,7 @@ $refreshInterval = 0.5
 $saveDataMaxCount = 20
 
 #ログイン画面で一括取得できる最大プレイルーム数
-$playRoomGetRangeMax = 10
+$playRoomGetRangeMax = 5
 
 #墓場に保存されるキャラクターの最大数
 $graveyardLimit = 30
