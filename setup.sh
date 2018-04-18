@@ -12,6 +12,12 @@ gem install msgpack
 cp -r imageUploadSpace /var/www/html/
 cp -r saveData /var/www/
 
+chmod 707 -R /var/www/html/imageUploadSpace
+chmod 707 -R /var/www/saveData
+
+
+bash deploy.sh
+
 # httpdの設定
 echo \<Directory "/var/www/html/DodontoF"\> >> /etc/httpd/conf/httpd.conf
 echo Options FollowSymLinks ExecCGI >> /etc/httpd/conf/httpd.conf

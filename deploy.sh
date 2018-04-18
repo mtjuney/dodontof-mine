@@ -8,5 +8,4 @@ chmod 703 -R /var/www/html/DodontoF/saveDataTempSpace
 chmod 703 -R /var/www/html/DodontoF/fileUploadSpace
 chmod 703 -R /var/www/html/DodontoF/replayDataUploadSpace
 chmod 606 -R /var/www/html/DodontoF/log.*
-# chmod 707 -R /var/www/html/imageUploadSpace
-# chmod 707 -R /var/www/saveData
+
