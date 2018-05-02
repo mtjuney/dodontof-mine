@@ -39,6 +39,7 @@ require 'dodontof/utils'
 require 'dodontof/dice_adapter'
 require 'dodontof/play_room'
 require 'dodontof/image'
+require 'dodontof/slack'
 
 require "config"
 
