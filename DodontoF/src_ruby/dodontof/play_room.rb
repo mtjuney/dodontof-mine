@@ -86,7 +86,7 @@ module DodontoF
       slack_message += 'Room Number : ' + playRoomIndex.to_s + "\n"
       slack_message += 'Room Name : ' + playRoomName + "\n"
       slack_message += "```"
-      DodontoF::Slack.sendSlackMessage(slack_message)
+      # DodontoF::Slack.sendSlackMessage(slack_message)
 
       return result
     end
