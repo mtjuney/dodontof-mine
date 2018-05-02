@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 module DodontoF
-  include DodontoF::Slack
+  # include DodontoF::Slack
   # PlayRoom情報
   class PlayRoom
     # コンストラクタ

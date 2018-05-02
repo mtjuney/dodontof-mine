@@ -1,5 +1,5 @@
 # どどんとふをコピー
-cp -r DodontoF /var/www/html/
+# cp -r DodontoF /var/www/html/
 rsync -av DodontoF/ /var/www/html/DodontoF/
 
 # 権限変更
