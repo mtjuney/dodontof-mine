@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 module DodontoF
+  include DodontoF::Slack
   # PlayRoom情報
   class PlayRoom
     # コンストラクタ
@@ -79,6 +80,13 @@ module DodontoF
       }
       @logger.debug(result, 'result')
       @logger.debug('createDir finished')
+
+      slack_message = "Created Room !\n"
+      slack_message += "```\n"
+      slack_message += 'Room Number : ' + playRoomIndex.to_s + "\n"
+      slack_message += 'Room Name : ' + playRoomName + "\n"
+      slack_message += "```"
+      DodontoF::Slack.sendSlackMessage(slack_message)
 
       return result
     end
