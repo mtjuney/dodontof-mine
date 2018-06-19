@@ -254,7 +254,7 @@ $isMultilingualization = true
 
 #外部画像URLの有効／無効を設定します。
 # true で有効、false で無効になります。
-$canUseExternalImageModeOn = false
+$canUseExternalImageModeOn = true
 
 
 #キャラクターコマにカーソルを合わせると表示される「その他」の情報の
@@ -268,7 +268,7 @@ $characterInfoToolTipMaxHeight = -1
 
 
 #ログアウト時に他に人がいない場合、部屋の削除を質問するかどうかを設定（true:質問する、false:しない)
-$isAskRemoveRoomWhenLogout = true
+$isAskRemoveRoomWhenLogout = false
 
 #画像アップロードで「全体」が指定できるかどうか。
 #true なら「全体」が指定可能。falseならできない。。
@@ -356,6 +356,7 @@ $diceBotOrder = <<____END_MARKER____
 ダイスボット(指定無し)
 クトゥルフ
 クトゥルフ第7版
+マギカロギア
 アマデウス
 インセイン
 キルデスビジネス
@@ -367,7 +368,6 @@ $diceBotOrder = <<____END_MARKER____
 ヤンキー＆ヨグ＝ソトース
 歯車の塔の探空士
 ネクロニカ
-マギカロギア
 アースドーン
 アースドーン3版
 アースドーン4版
